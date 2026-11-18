@@ -7,11 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <!--  رسالة ترحيبية لتطبيق رفيق رمضان -->
-        <TextBlock Text="أهلاً بك في تطبيق رفيق رمضان" 
-               HorizontalAlignment="Center" 
-               VerticalAlignment="Center" 
-               FontSize="24" />
-    
+      
     </Grid>
 </Window>
