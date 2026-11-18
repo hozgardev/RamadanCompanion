@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using RamadanCompanion.ViewModels;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,8 @@ namespace RamadanCompanion
         public MainWindow()
         {
             InitializeComponent();
+            // ربط الشاشة بالـ ViewModel لتفعيل الـ Data Binding
+            this.DataContext = new MainViewModel();
         }
     }
 }
