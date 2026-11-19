@@ -1,0 +1,90 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- الخلفيات والأوسطح (Backgrounds & Surfaces) -->
+    <Color x:Key="BorderStrongColor">#2F5E51</Color>
+    <Color x:Key="BorderSubtleColor">#21463C</Color>
+    <Color x:Key="SurfaceInputColor">#0C2520</Color>
+    <Color x:Key="SurfaceHoverColor">#1E483E</Color>
+    <Color x:Key="SurfaceRaisedColor">#173B33</Color>
+    <Color x:Key="SurfaceCardColor">#11302A</Color>
+    <Color x:Key="BgOverlayColor">#04100C</Color>
+    <Color x:Key="BgSidebarColor">#0D241E</Color>
+    <Color x:Key="BgBaseColor">#0A1C17</Color>
+
+    <!-- الأخضر الزمردي الأساسي (Primary Emerald) -->
+    <Color x:Key="PrimarySubtleColor">#163F33</Color>
+    <Color x:Key="Primary700Color">#16523F</Color>
+    <Color x:Key="Primary600Color">#1F7055</Color>
+    <Color x:Key="Primary500Color">#2A8C69</Color>
+    <Color x:Key="Primary400Color">#3FA580</Color>
+    <Color x:Key="Primary300Color">#6CC4A1</Color>
+
+    <!-- الذهبي الدافئ / التمييز (Gold / Accent) -->
+    <Color x:Key="GoldSubtleColor">#33301C</Color>
+    <Color x:Key="Gold600Color">#B0862C</Color>
+    <Color x:Key="Gold500Color">#D2A747</Color>
+    <Color x:Key="Gold400Color">#E2BE69</Color>
+    <Color x:Key="Gold300Color">#F0D58C</Color>
+
+    <!-- النصوص (Texts) -->
+    <Color x:Key="TextOnPrimaryColor">#FFFFFF</Color>
+    <Color x:Key="TextOnGoldColor">#1B1403</Color>
+    <Color x:Key="TextMutedColor">#6F8C81</Color>
+    <Color x:Key="TextSecondaryColor">#AFC3BA</Color>
+    <Color x:Key="TextPrimaryColor">#F4EFE1</Color>
+
+    <!-- ألوان الحالة (Status Colors) -->
+    <Color x:Key="InfoSubtleColor">#18324A</Color>
+    <Color x:Key="Info500Color">#5DAAE6</Color>
+    <Color x:Key="DangerSubtleColor">#3D1F1C</Color>
+    <Color x:Key="Danger500Color">#E8685B</Color>
+    <Color x:Key="WarningSubtleColor">#3B3119</Color>
+    <Color x:Key="Warning500Color">#EBB34E</Color>
+    <Color x:Key="SuccessSubtleColor">#173D2D</Color>
+    <Color x:Key="Success500Color">#4CC38A</Color>
+
+    <!-- تعريف الـ Brushes للاستخدام المباشر بالواجهات -->
+    <!-- الخلفيات والأوسطح -->
+    <SolidColorBrush x:Key="BorderStrongBrush" Color="{StaticResource BorderStrongColor}"/>
+    <SolidColorBrush x:Key="BorderSubtleBrush" Color="{StaticResource BorderSubtleColor}"/>
+    <SolidColorBrush x:Key="SurfaceInputBrush" Color="{StaticResource SurfaceInputColor}"/>
+    <SolidColorBrush x:Key="SurfaceHoverBrush" Color="{StaticResource SurfaceHoverColor}"/>
+    <SolidColorBrush x:Key="SurfaceRaisedBrush" Color="{StaticResource SurfaceRaisedColor}"/>
+    <SolidColorBrush x:Key="SurfaceCardBrush" Color="{StaticResource SurfaceCardColor}"/>
+    <SolidColorBrush x:Key="BgOverlayBrush" Color="{StaticResource BgOverlayColor}"/>
+    <SolidColorBrush x:Key="BgSidebarBrush" Color="{StaticResource BgSidebarColor}"/>
+    <SolidColorBrush x:Key="BgBaseBrush" Color="{StaticResource BgBaseColor}"/>
+
+    <!-- الأخضر الزمردي -->
+    <SolidColorBrush x:Key="PrimarySubtleBrush" Color="{StaticResource PrimarySubtleColor}"/>
+    <SolidColorBrush x:Key="Primary700Brush" Color="{StaticResource Primary700Color}"/>
+    <SolidColorBrush x:Key="Primary600Brush" Color="{StaticResource Primary600Color}"/>
+    <SolidColorBrush x:Key="Primary500Brush" Color="{StaticResource Primary500Color}"/>
+    <SolidColorBrush x:Key="Primary400Brush" Color="{StaticResource Primary400Color}"/>
+    <SolidColorBrush x:Key="Primary300Brush" Color="{StaticResource Primary300Color}"/>
+
+    <!-- الذهبي -->
+    <SolidColorBrush x:Key="GoldSubtleBrush" Color="{StaticResource GoldSubtleColor}"/>
+    <SolidColorBrush x:Key="Gold600Brush" Color="{StaticResource Gold600Color}"/>
+    <SolidColorBrush x:Key="Gold500Brush" Color="{StaticResource Gold500Color}"/>
+    <SolidColorBrush x:Key="Gold400Brush" Color="{StaticResource Gold400Color}"/>
+    <SolidColorBrush x:Key="Gold300Brush" Color="{StaticResource Gold300Color}"/>
+
+    <!-- النصوص -->
+    <SolidColorBrush x:Key="TextOnPrimaryBrush" Color="{StaticResource TextOnPrimaryColor}"/>
+    <SolidColorBrush x:Key="TextOnGoldBrush" Color="{StaticResource TextOnGoldColor}"/>
+    <SolidColorBrush x:Key="TextMutedBrush" Color="{StaticResource TextMutedColor}"/>
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="{StaticResource TextSecondaryColor}"/>
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="{StaticResource TextPrimaryColor}"/>
+
+    <!-- الحالة -->
+    <SolidColorBrush x:Key="InfoSubtleBrush" Color="{StaticResource InfoSubtleColor}"/>
+    <SolidColorBrush x:Key="Info500Brush" Color="{StaticResource Info500Color}"/>
+    <SolidColorBrush x:Key="DangerSubtleBrush" Color="{StaticResource DangerSubtleColor}"/>
+    <SolidColorBrush x:Key="Danger500Brush" Color="{StaticResource Danger500Color}"/>
+    <SolidColorBrush x:Key="WarningSubtleBrush" Color="{StaticResource WarningSubtleColor}"/>
+    <SolidColorBrush x:Key="Warning500Brush" Color="{StaticResource Warning500Color}"/>
+    <SolidColorBrush x:Key="SuccessSubtleBrush" Color="{StaticResource SuccessSubtleColor}"/>
+    <SolidColorBrush x:Key="Success500Brush" Color="{StaticResource Success500Color}"/>
+
+</ResourceDictionary>

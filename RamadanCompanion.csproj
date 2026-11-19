@@ -9,7 +9,36 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Fonts\Amiri-Regular.ttf" />
+    <None Remove="Resources\Fonts\Tajawal-Black.ttf" />
+    <None Remove="Resources\Fonts\Tajawal-Bold.ttf" />
+    <None Remove="Resources\Fonts\Tajawal-ExtraBold.ttf" />
+    <None Remove="Resources\Fonts\Tajawal-Medium.ttf" />
+    <None Remove="Resources\Fonts\Tajawal-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Resources\Typography.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Resources\Typography.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\Amiri-Regular.ttf" />
+    <Resource Include="Resources\Fonts\Tajawal-Black.ttf" />
+    <Resource Include="Resources\Fonts\Tajawal-Bold.ttf" />
+    <Resource Include="Resources\Fonts\Tajawal-ExtraBold.ttf" />
+    <Resource Include="Resources\Fonts\Tajawal-Medium.ttf" />
+    <Resource Include="Resources\Fonts\Tajawal-Regular.ttf" />
+    <Resource Include="Resources\Typography.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
   </ItemGroup>
 
 </Project>
