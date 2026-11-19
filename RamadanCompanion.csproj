@@ -18,6 +18,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Remove="Resources\Typography.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Resources\Typography.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
   </ItemGroup>
 
@@ -28,12 +36,9 @@
     <Resource Include="Resources\Fonts\Tajawal-ExtraBold.ttf" />
     <Resource Include="Resources\Fonts\Tajawal-Medium.ttf" />
     <Resource Include="Resources\Fonts\Tajawal-Regular.ttf" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Resources\Typography.xam">
+    <Resource Include="Resources\Typography.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </None>
+    </Resource>
   </ItemGroup>
 
 </Project>
