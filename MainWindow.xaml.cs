@@ -20,8 +20,23 @@ namespace RamadanCompanion
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += MainWindow_Loaded;
             // ربط الشاشة بالـ ViewModel لتفعيل الـ Data Binding
             this.DataContext = new MainViewModel();
+
+        }
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            var workArea = SystemParameters.WorkArea;
+
+            if (Width > workArea.Width)
+                Width = Math.Max(MinWidth, workArea.Width - 40);
+
+            if (Height > workArea.Height)
+                Height = Math.Max(MinHeight, workArea.Height - 40);
+
+            Left = workArea.Left + Math.Max(0, (workArea.Width - Width) / 2);
+            Top = workArea.Top + Math.Max(0, (workArea.Height - Height) / 2);
         }
     }
 }
