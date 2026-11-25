@@ -5,14 +5,114 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RamadanCompanion"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+Title="رفيق رمضان" Width="1376" Height="900"
+        MinWidth="1024"
+MinHeight="650"
+     WindowStartupLocation="CenterScreen"
+ 
+      FlowDirection="RightToLeft"
+      UseLayoutRounding="True"
+SnapsToDevicePixels="True"
+       
+        Background="{StaticResource BgBaseBrush}"
+        FontFamily="{StaticResource AppFont}"
+        Foreground="{StaticResource TextPrimaryBrush}">
+    <Grid Background="{StaticResource BgBaseBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="264" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-    <Grid>
+        <Border Grid.Column="0"
+                Background="{StaticResource BgSidebarBrush}"
+                BorderBrush="{StaticResource BorderSubtleBrush}"
+                BorderThickness="1,0,0,0"
+                Padding="16,24,16,24">
+            <StackPanel Orientation="Vertical">
+
+                <Grid Margin="8,0,8,24">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Viewbox Grid.Column="0"
+                             Width="32"
+                             Height="32"
+                             VerticalAlignment="Center"
+                             Margin="0,0,12,0">
+                        <Path Data="{StaticResource IconCrescent}"
+                              Fill="{StaticResource Gold400Brush}"
+                              Stretch="Uniform" />
+                    </Viewbox>
+
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                        <TextBlock Text="رفيق رمضان"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Foreground="{StaticResource Gold400Brush}" />
+                        <TextBlock Text="Ramadan Companion"
+                                   FontSize="12"
+                                   Foreground="{StaticResource TextMutedBrush}" />
+                    </StackPanel>
+                </Grid>
+
+                <RadioButton Content="الرئيسية"
+                             Style="{StaticResource NavItemRadioStyle}"
+                             Tag="{StaticResource IconHome}"
+                             Margin="0,0,0,4"
+                             IsChecked="True"
+                             Command="{Binding NavigateCommand}"
+                             CommandParameter="Home" />
+
+                <RadioButton Content="مواقيت الصلاة"
+                             Style="{StaticResource NavItemRadioStyle}"
+                             Tag="{StaticResource IconClock}"
+                             Margin="0,0,0,4"
+                             Command="{Binding NavigateCommand}"
+                             CommandParameter="PrayerTimes" />
+
+                <RadioButton Content="القرآن والختمة"
+                             Style="{StaticResource NavItemRadioStyle}"
+                             Tag="{StaticResource IconBook}"
+                             Margin="0,0,0,4"
+                             Command="{Binding NavigateCommand}"
+                             CommandParameter="Quran" />
+
+                <RadioButton Content="العبادات اليومية"
+                             Style="{StaticResource NavItemRadioStyle}"
+                             Tag="{StaticResource IconWorship}"
+                             Margin="0,0,0,4"
+                             Command="{Binding NavigateCommand}"
+                             CommandParameter="Worship" />
+
+                <RadioButton Content="الأهداف"
+                             Style="{StaticResource NavItemRadioStyle}"
+                             Tag="{StaticResource IconGoals}"
+                             Margin="0,0,0,4"
+                             Command="{Binding NavigateCommand}"
+                             CommandParameter="Goals" />
+
+                <RadioButton Content="التقارير"
+                             Style="{StaticResource NavItemRadioStyle}"
+                             Tag="{StaticResource IconChart}"
+                             Margin="0,0,0,4"
+                             Command="{Binding NavigateCommand}"
+                             CommandParameter="Reports" />
+
+                <RadioButton Content="الإعدادات والتذكيرات"
+                             Style="{StaticResource NavItemRadioStyle}"
+                             Tag="{StaticResource IconSettings}"
+                             Margin="0,0,0,4"
+                             Command="{Binding NavigateCommand}"
+                             CommandParameter="Settings" />
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="1"
+                Background="{StaticResource BgBaseBrush}"
+                Padding="32">
+            <ContentControl Content="{Binding CurrentViewModel}" />
+        </Border>
     </Grid>
-
-    
-
-    
-
-    
 </Window>

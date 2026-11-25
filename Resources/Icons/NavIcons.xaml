@@ -1,0 +1,52 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- أيقونة الرئيسية (Home) -->
+    <GeometryGroup x:Key="IconHome">
+        <PathGeometry Figures="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" />
+        <PathGeometry Figures="M9 22V12H15V22" />
+    </GeometryGroup>
+    <!-- أيقونة مواقيت الصلاة / الساعة (Clock) -->
+    <GeometryGroup x:Key="IconClock">
+        <PathGeometry Figures="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" />
+        <PathGeometry Figures="M12 6V12L16 14" />
+    </GeometryGroup>
+    <!-- أيقونة التقارير / الإحصائيات (Chart) -->
+    <GeometryGroup x:Key="IconChart">
+        <PathGeometry Figures="M12 20V10" />
+        <PathGeometry Figures="M18 20V4" />
+        <PathGeometry Figures="M6 20V16" />
+    </GeometryGroup>
+    <!-- أيقونة القرآن الكريم / الكتاب (Book) -->
+    <GeometryGroup x:Key="IconBook">
+        <PathGeometry Figures="M2 3H8C9.06087 3 10.0783 3.42143 10.8284 4.17157C11.5786 4.92172 12 5.93913 12 7V21C12 20.2044 11.6839 19.4413 11.1213 18.8787C10.5587 18.3161 9.79565 18 9 18H2V3Z" />
+        <PathGeometry Figures="M22 3H16C14.9391 3 13.9217 3.42143 13.1716 4.17157C12.4214 4.92172 12 5.93913 12 7V21C12 20.2044 12.3161 19.4413 12.8787 18.8787C13.4413 18.3161 14.2044 18 15 18H22V3Z" />
+    </GeometryGroup>
+    <!-- أيقونة العبادات / المهام (CheckSquare / Worship) -->
+    <GeometryGroup x:Key="IconWorship">
+        <PathGeometry Figures="M9 11L12 14L22 4" />
+        <PathGeometry Figures="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" />
+    </GeometryGroup>
+    <!-- أيقونة الأهداف (Target / Goals) -->
+    <GeometryGroup x:Key="IconGoals">
+        <PathGeometry Figures="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" />
+        <PathGeometry Figures="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z" />
+        <PathGeometry Figures="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" />
+    </GeometryGroup>
+    <!-- أيقونة الإعدادات (Settings) -->
+    <GeometryGroup x:Key="IconSettings">
+        <PathGeometry Figures="M4 21V14" />
+        <PathGeometry Figures="M4 10V3" />
+        <PathGeometry Figures="M12 21V12" />
+        <PathGeometry Figures="M12 8V3" />
+        <PathGeometry Figures="M20 21V16" />
+        <PathGeometry Figures="M20 12V3" />
+        <PathGeometry Figures="M1 14H7" />
+        <PathGeometry Figures="M9 8H15" />
+        <PathGeometry Figures="M17 16H23" />
+    </GeometryGroup>
+    <!-- أيقونة الهلال (Crescent) -->
+    <GeometryGroup x:Key="IconCrescent">
+        <PathGeometry Figures="M33.2803 2.02832C49.2549 2.69905 62 15.8604 62 32C62 48.5685 48.5685 62 32 62C19.0223 62 7.96949 53.7595 3.78809 42.2256C7.62163 44.6168 12.149 46 17 46C30.8071 46 42 34.8071 42 21C42 13.4114 38.6182 6.61324 33.2803 2.02832Z" />
+    </GeometryGroup>
+    
+</ResourceDictionary>
