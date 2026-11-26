@@ -1,4 +1,5 @@
-﻿using RamadanCompanion.ViewModels;
+﻿using RamadanCompanion.Data;
+using RamadanCompanion.ViewModels;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -37,6 +38,26 @@ namespace RamadanCompanion
 
             Left = workArea.Left + Math.Max(0, (workArea.Width - Width) / 2);
             Top = workArea.Top + Math.Max(0, (workArea.Height - Height) / 2);
+        }
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int count = await DbHelper.TestReminderTypesCountAsync();
+                MessageBox.Show(
+                    $"تم الاتصال بنجاح! عدد السجلات في ReminderTypes: {count}",
+                    "اختبار ADO.NET",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"حدث خطأ أثناء الاتصال: {ex.Message}",
+                    "خطأ في الاتصال",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
         }
     }
 }

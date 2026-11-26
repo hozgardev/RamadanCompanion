@@ -16,7 +16,8 @@ SnapsToDevicePixels="True"
        
         Background="{StaticResource BgBaseBrush}"
         FontFamily="{StaticResource AppFont}"
-        Foreground="{StaticResource TextPrimaryBrush}">
+        Foreground="{StaticResource TextPrimaryBrush}"
+        Loaded="Window_Loaded">
     <Grid Background="{StaticResource BgBaseBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="264" />
