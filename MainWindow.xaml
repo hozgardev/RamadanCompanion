@@ -16,7 +16,8 @@ SnapsToDevicePixels="True"
        
         Background="{StaticResource BgBaseBrush}"
         FontFamily="{StaticResource AppFont}"
-        Foreground="{StaticResource TextPrimaryBrush}">
+        Foreground="{StaticResource TextPrimaryBrush}"
+       >
     <Grid Background="{StaticResource BgBaseBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="264" />
@@ -112,7 +113,21 @@ SnapsToDevicePixels="True"
         <Border Grid.Column="1"
                 Background="{StaticResource BgBaseBrush}"
                 Padding="32">
-            <ContentControl Content="{Binding CurrentViewModel}" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           Text="{Binding DbStatusMessage}"
+                           Margin="0,0,0,12"
+                           FontSize="12"
+                           Foreground="{StaticResource TextMutedBrush}" />
+
+                <ContentControl Grid.Row="1"
+                                Content="{Binding CurrentViewModel}" />
+            </Grid>
         </Border>
     </Grid>
 </Window>

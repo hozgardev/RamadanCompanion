@@ -1,4 +1,5 @@
-﻿using RamadanCompanion.ViewModels;
+﻿
+using RamadanCompanion.ViewModels;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -38,5 +39,6 @@ namespace RamadanCompanion
             Left = workArea.Left + Math.Max(0, (workArea.Width - Width) / 2);
             Top = workArea.Top + Math.Max(0, (workArea.Height - Height) / 2);
         }
+     
     }
 }

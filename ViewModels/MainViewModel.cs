@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using RamadanCompanion.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +26,13 @@ namespace RamadanCompanion.ViewModels
 
         [ObservableProperty]
         private object? _currentViewModel;
+        [ObservableProperty]
+        private string _dbStatusMessage = "جاري فحص الاتصال بقاعدة البيانات...";
 
         public MainViewModel()
         {
             _currentViewModel = _homeViewModel;
+            _ = LoadDbStatusAsync();
         }
 
         [RelayCommand]
@@ -45,6 +49,18 @@ namespace RamadanCompanion.ViewModels
                 "Settings" => _settingsViewModel,
                 _ => _homeViewModel
             };
+        }
+        public async Task LoadDbStatusAsync()
+        {
+            try
+            {
+                int count = await DbHelper.TestReminderTypesCountAsync();
+                DbStatusMessage = $"تم الاتصال بنجاح (ReminderTypes: {count})";
+            }
+            catch (Exception ex)
+            {
+                DbStatusMessage = $"تعذر الاتصال بقاعدة البيانات: {ex.Message}";
+            }
         }
     }
 }
