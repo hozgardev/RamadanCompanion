@@ -23,8 +23,8 @@ namespace RamadanCompanion.Data
 
         public static string GetConnectionString()
         {
-            return _configuration.GetConnectionString("DefaultConnection")
-                   ?? throw new InvalidOperationException("Connection string 'DefaultConnection' was not found.");
+            return _configuration.GetConnectionString("Default")
+                   ?? throw new InvalidOperationException("Connection string 'Default' was not found.");
         }
 
         public static SqlConnection GetConnection()
